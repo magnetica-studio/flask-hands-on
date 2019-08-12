@@ -1,20 +1,17 @@
 # flask-hands-on
 ### Create Image:
 ```shell
-docker build -t flaskappimage .
+make docker-build
 ```
 
 ### Run:
 ```shell
-docker run -itd --name flaskapp \
---mount type=bind,source="$(pwd)/src/",dst=/app/src \
--p 5000:5000 \
-flaskappimage
+make docker-run
 ```
 
 ### see logs,
 ```shell
-docker logs -f flaskapp
+make docker-logs
 ```
 
 ### see stats,
@@ -24,5 +21,5 @@ docker stats
 
 ### To test
 ```shell
-docker exec -it flask python3 -m unittest discover -v -s src
+make test
 ```
