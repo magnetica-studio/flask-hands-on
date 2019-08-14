@@ -1,0 +1,7 @@
+Flask
+pytest
+flake8
+mypy
+autopep8
+PyMySQL
+Flask-SQLAlchemy
