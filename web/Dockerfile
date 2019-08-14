@@ -6,6 +6,4 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 RUN pip install PyMySQL[rsa]
 ENV FLASK_APP ./src/app.py
 ENV FLASK_RUN_HOST 0.0.0.0
-#prod
-# ENV FLASK_ENV production
 CMD ["flask", "run"]
