@@ -1,25 +1,9 @@
 # flask-hands-on
-### Create Image:
+### Run
 ```shell
-make docker-build
+docker-compose up
 ```
-
-### Run:
+### Quit
 ```shell
-make docker-run
-```
-
-### see logs,
-```shell
-make docker-logs
-```
-
-### see stats,
-```shell
-docker stats
-```
-
-### To test
-```shell
-make test
+docker-compose stop
 ```
